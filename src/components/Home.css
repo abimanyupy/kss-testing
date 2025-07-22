@@ -1,0 +1,118 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    margin-top: -2rem;
+    font-size: calc(10px + 2vmin);
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #222831;
+}
+
+.vinyll {
+  height: 40vmin;
+  pointer-events: none;
+  position: absolute;
+  margin-left: 6.4vmin;
+  margin-top: 0.1vmin;
+  z-index: 2;
+}
+
+.turntable{
+  height: 40vmin;
+  justify-items: center;
+  pointer-events: none;
+  position:relative ;
+  z-index: 1;
+}
+
+.title{
+  margin-top: -3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .vinyll {
+      animation: vinyll-spin infinite 3s linear;
+    }
+}
+  
+  @keyframes vinyll-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3vmin;
+  }
+  
+  .box-menu{
+    background: #393E46;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family:  Helvetica;
+    font-weight:bolder;
+    
+  }
+  
+  .link-menu {
+    color: white;
+    text-decoration: none;
+  }
+
+  .home-bg {
+    position: relative;
+    min-height: 100vh;
+    /* background: url('../public/bg-kss.png') center center/cover no-repeat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .home-logo {
+    width: 400px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: -8px;
+    letter-spacing: 1px;
+  }
+
+  .home-subtitle {
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+
